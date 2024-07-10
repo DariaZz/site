@@ -10,7 +10,7 @@ h2{
     color: 14c7c7;
 }
 
-img{
+.productPreview{
         max-width:200px;
         max-height:300px;
         margin-right: 20px;
@@ -59,8 +59,8 @@ a:hover {
 }
 
 button{
-        width: 100%;
         height: 50px;
+        width: 100%;
         background-color: white;
         border: 1px solid black;
         cursor: pointer;
@@ -74,10 +74,15 @@ button:hover{
 }
 
 .priceSection {
-        width: 500px;
+        min-width: 50px;
         text-align: center;
 }
 .p{
     padding: 5px;
     margin: 5px;
+}
+.productCard{
+     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }

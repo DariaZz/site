@@ -16,7 +16,7 @@
 <div class="productlist">
     {% for product in products %}
     <div class="products" >
-           <img src="{{ product.image_url }}">
+           <img class="productPreview" src="{{ product.image_url }}">
         <div>
             <h2> {{ product.name }}</h2>
            <p>{{ product.description }}</p>
