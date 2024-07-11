@@ -94,4 +94,7 @@ button:hover{
     color: blue;
 }
 
-
+.productImage {
+    max-width: 400px;
+    max-height: 500px;
+}

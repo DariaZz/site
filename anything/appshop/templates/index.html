@@ -8,8 +8,8 @@
 
          <div class = "navigation">
                 <a href="/" >Главная</a>
-                <a href="/products">Товары</a>
-                <a href="/users">Личный кабинет</a>
+                <a  href="/products">Товары</a>
+                <a   href="/users">Личный кабинет</a>
          </div>
 </div>
 
@@ -18,8 +18,12 @@
     <div class="products" >
            <img class="productPreview" src="{{ product.image_url }}">
         <div>
-            <h2> {{ product.name }}</h2>
-           <p>{{ product.description }}</p>
+         <a href="/product/{{ product.id }}  ">
+           <h2> {{ product.name }}</h2>
+         </a>
+
+
+  <p>{{ product.description }}</p>
         </div>
         <div class="priceSection">
             <h3>{{ product.price }} ₽</h3>
