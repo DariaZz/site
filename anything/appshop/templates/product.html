@@ -49,12 +49,15 @@
             </div>
             {% endfor %}
 
-            <div>
+            <div class="createReviewsAll ">
                 <h1>Оставте отзыв</h1>
                 <div class="createReviews">
-                    <form>
-                        <input />
-                        <textarea></textarea>
+                    <form class="creatReviewForm" method="post">
+                            <label for="author">Автор</label>
+                            <input name="author"  />
+                            <label for="text">Описание</label>
+                            <textarea class="creatReview" name="text"></textarea>
+                            <button>Отправить отзыв</button>
                     </form>
                 </div>
             </div>
