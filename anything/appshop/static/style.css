@@ -6,8 +6,8 @@
     font-size: 50px;
 }
 
-h2{
-    color: black;
+.textTurquoise{
+    color: #3cdede;
 }
 
 .productPreview{
@@ -88,13 +88,33 @@ button:hover{
     margin-right: auto;
     display: flex;
     flex-direction: row;
+
 }
 
 .productDetails{
-    color: blue;
+    color: #3cdede;
+
 }
 
 .productImage {
     max-width: 300px;
     max-height: 400px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+
+}
+.review{
+    border: 2px #5eb1e0 solid;
+    padding: 10px;
+    margin-right: 20px;
+    max-width: 25%;
+    max-height: 600px;
+    color: #5eb1e0;
+
+}
+.imgreview{
+    max-width: 100px;
+    max-height: 200px;
 }
