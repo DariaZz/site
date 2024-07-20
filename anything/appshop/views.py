@@ -16,5 +16,6 @@ def view_product(request,id):
     reviews = product.reviews_set.all()
 
     return render(request, 'product.html', {
-        'product': product
+        'product': product,
+        'reviews': reviews
     })
