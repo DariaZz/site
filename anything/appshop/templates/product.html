@@ -28,14 +28,15 @@
             {{ product.description }}
         </p>
         <h1 <span style=" color: #f2c2e5 ">Отзывы</span></h1>
-
-        <div class="reviews" >
-            {% for review in review %}
-                <div class="review" >
+        <<div class="reviews" >
+            {% for review in reviews %}
+            <div class="review" >
                     <h2>{{review.author}}</h2>
-                    <p>{{review.text}}</p>
+                    <p>
+                        {{review.text}}
+                    </p>
                     <img  src="{{review.image_url}}" class="imgreview">
-                </div>
+            </div>
             {% endfor %}
         </div>
 </div>
