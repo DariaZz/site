@@ -13,6 +13,8 @@ def hello(request):
 
 def view_product(request,id):
     product = Product.objects.filter(id=id).first()
+    reviews = product.reviews_set.all()
+
     return render(request, 'product.html', {
         'product': product
     })
