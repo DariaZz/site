@@ -20,23 +20,45 @@
         <h3>{{ product.price }} ₽</h3>
         <button>Купить</button>
     </div>
+
 </div>
 
 <div class="productDetails">
+    <div class="FOROTSTYPA">
         <h1 <span style=" color: #f2c2e5 ">Описание</span></h1>
         <p>
             {{ product.description }}
         </p>
-        <h1 <span style=" color: #f2c2e5 ">Отзывы</span></h1>
-        <<div class="reviews" >
+    </div>
+</div>
+
+<div>
+
+
+    <h1 class="d" <span style=" color: #f2c2e5 ">Отзывы</span></h1>
+        <div class="reviews" >
             {% for review in reviews %}
             <div class="review" >
-                    <h2>{{review.author}}</h2>
+                    <div>
+                        <h2>{{review.author}}</h2>
                     <p>
                         {{review.text}}
                     </p>
                     <img  src="{{review.image_url}}" class="imgreview">
+                    </div>
             </div>
             {% endfor %}
+
+            <div>
+                <h1>Оставте отзыв</h1>
+                <div class="createReviews">
+                    <form>
+                        <input />
+                        <textarea></textarea>
+                    </form>
+                </div>
+            </div>
         </div>
-</div>
+
+
+
