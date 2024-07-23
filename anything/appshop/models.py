@@ -17,3 +17,6 @@ class Reviews(models.Model):
     author = models.CharField(max_length=158)
     image_url = models.CharField(max_length=256)
     text = models.TextField()
+
+    def __str__(self):
+        return f'{self.author}:{self.text[:100]}'

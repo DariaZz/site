@@ -53,11 +53,14 @@
                 <h1>Оставте отзыв</h1>
                 <div class="createReviews">
                     <form class="creatReviewForm" method="post">
+                            {% csrf_token %}
+
                             <label for="author">Автор</label>
                             <input name="author"  />
                             <label for="text">Описание</label>
                             <textarea class="creatReview" name="text"></textarea>
                             <button>Отправить отзыв</button>
+
                     </form>
                 </div>
             </div>
