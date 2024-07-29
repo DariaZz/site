@@ -1,0 +1,37 @@
+{% load static %}
+<link rel = "stylesheet" href="{% static 'style.css' %}" >
+
+<div class = "heading">
+        <div class = "logo">
+            <h1 class = "logoText" style = "font-family: Montserrat ">ABIBAS</h1>
+        </div>
+
+         <div class = "navigation">
+                <a href="/" >Главная</a>
+
+                <a href="/users">Личный кабинет</a>
+         </div>
+</div>
+
+<div class="payment">
+    <h1>Товар: {{product.name}} </h1>
+    <h2>К оплате: {{product.price}} ₽</h2>
+
+     <h1>Реквизиты для перевода:</h1>
+     <h2>Номер</h2>
+     <h2>Иванов Иван Ивванович, сбер</h2>
+
+      <h1>Данные для доставки:</h1>
+     <form class="paymentDetailsForm" method="POST" >
+         {% csrf_token %}
+     <label>ФИО получателя: </label>
+     <input class="creatReview" name="fullname"/>
+     <label>Адрес доставки: </label>
+     <input class="creatReview" name="adress" />
+     <label>Номер телефона: </label>
+     <input class="creatReview"  name="phone"  />
+
+     </form>
+
+     <button class="pay">Оплатил</button>
+</div>

@@ -28,3 +28,6 @@ def view_product(request,id):
         'product': product,
         'reviews': reviews
     })
+
+def pay(request,id):
+    return render(request, 'pay.html')

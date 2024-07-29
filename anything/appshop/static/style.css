@@ -163,3 +163,22 @@ button:hover{
 .creatReviewForm * {
     margin-top:10px;
 }
+.pay{
+
+    margin-top: 20px;
+
+}
+.payment{
+    color: #5eb1e0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paymentDetailsForm {
+    display: flex;
+    flex-direction: column;
+}
+.paymentDetailsForm label {
+    margin-right: 10px;
+    margin-left: 5px;
+}
