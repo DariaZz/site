@@ -30,4 +30,16 @@ def view_product(request,id):
     })
 
 def pay(request,id):
-    return render(request, 'pay.html')
+    product = Product.objects.filter(id=id).first()
+
+    if request.method == "POST":
+        name = request.POST.get('fullname')
+        adress = request.POST.get('adress')
+        phone = request.POST.get('phone')
+        print(name, adress, phone)
+
+    return render(request, 'pay.html', {
+        'product': product
+    })
+def pay_successful(request):
+    return render(request, 'successful.html')
