@@ -1,2 +1,3 @@
 venv/
 anything/db.sqlite3
+internetshop/shop/config.py
