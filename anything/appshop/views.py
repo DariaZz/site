@@ -5,7 +5,7 @@ from .models import Product
 from .models import Reviews
 
 
-from .config. import API_TOKEN, CHAT_ID
+from .config import API_TOKEN, CHAT_ID
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -44,7 +44,7 @@ def pay(request,id):
         bot.send_message(CHAT_ID, f'''💸 Заказ: {product.name} ({product.price} рублей)
 
 ФИО заказчика: {name}
-Адрес доставки: {address}
+Адрес доставки: {adress}
 Телефон: {phone}''')
         return redirect('/success')
 
