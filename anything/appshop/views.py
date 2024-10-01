@@ -6,7 +6,6 @@ from .models import Reviews
 
 
 from .config import API_TOKEN, CHAT_ID
-
 bot = telebot.TeleBot(API_TOKEN)
 
 # Create your views here.
@@ -46,7 +45,7 @@ def pay(request,id):
 ФИО заказчика: {name}
 Адрес доставки: {adress}
 Телефон: {phone}''')
-        return redirect('/success')
+        return redirect('/successful')
 
     return render(request, 'pay.html', {
         'product': product
